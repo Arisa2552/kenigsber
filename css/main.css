@@ -1,0 +1,251 @@
+/* ------Спецификация ------*/
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    font-size: 16px;
+    color: #304041;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul, li {
+    display: block;
+    padding: 0;margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+p {
+    margin: 0;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+/* ------Header------ */
+
+header {
+    text-align: center;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 1.39%, rgba(36, 32, 84, 0.26) 44.44%), url(../img/Kening.jpg) no-repeat center top / cover;
+    height: 900px;
+    color: #fff;
+    padding: 90px 0 79.5px;
+}
+
+.logo {
+    width: 149px;
+    height: 54px;
+}
+
+.offer {
+    text-align: center;
+    width: 100%;
+    margin: 174px 0;
+}
+
+.offer :not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.offer__dream {
+    font-weight: 800;
+    font-size: 15px;
+    margin: 0 auto;
+    background-color: #fff;
+    width: 318px;
+    border-radius: 78px;
+}
+
+.offer__dream-text {
+    margin: 0 auto;
+    color: #000;
+    padding: 8px 17px;
+    text-transform: uppercase;
+}
+
+.offer__title {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 800;
+    font-size: 60px;
+    letter-spacing: 0.145em;
+}
+
+.Offer__text {
+    font-size: 20px;
+}
+
+.offer__btn {
+    margin: 143px 0 10px;
+}
+
+.arrow {
+    transition: all 0.5s ease;
+}
+
+.btn--clik {
+    background-color: #FF367E;
+    padding: 18px 52px;
+    border-radius: 119px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 1.25em;
+    line-height: 56px;
+    transition: all 0.5s ease;
+}
+
+.btn--clik:hover {
+    background-color: #c1285f;
+} 
+    
+.btn--clik:active {
+    background-color: #fff;
+    color: #FF367E;
+    border: #FF367E 1px solid;
+}
+
+/* ------Центр города ------*/
+
+.route {
+    padding: 143px 0 146px;
+}
+
+.route-wrap {
+    text-align: center;
+}
+
+.way {
+    text-align: center;
+}
+
+.why {
+    display: flex;
+    background-color: #F1F0FF;
+    margin: 90px 0;
+    text-align: left;
+}
+
+.center {
+    padding: 112px 78px 0 73px;
+}
+
+.center__12 {
+    color: #789AA0;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.center__title {
+    font-weight: 800;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.center__text {
+    line-height: 1.524em;
+    margin-bottom: 55px;
+}
+
+.center__text--botton {
+    margin-bottom: 22px;
+    letter-spacing: 0.05em;
+}
+
+.center__text--down {
+    margin-bottom: 55px;
+    letter-spacing: 0.05em;
+}
+
+.photo-people {
+    width: 476px;
+    height: 649px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.all-btn {
+    margin: 90px 0;
+}
+
+/*------Маршруты------ */
+
+.gid {
+    text-align: center;
+}
+
+.gid-wrap {
+    height: 626px;
+    background: url(../img/cat.jpg) no-repeat right top/50%;
+}
+
+.container-full {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.opportunity {
+    margin-bottom: 250px;
+}
+
+.list {
+    text-align: left;
+    width: 407px;
+}
+
+.list__text {
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    line-height: 1.218;
+    margin-bottom: 57px;
+}
+
+.list__text:before {
+    content: '';
+    display: block;
+    height: 7px;
+    width: 64.43px;
+    background-color: #4EB1B6;
+    border-radius: 23px;
+    margin-bottom: 15px;
+    /* transform: rotate(90ed); */
+}
+
+.photo--cat {
+    width: 787px;
+    height: 626px;
+}
+
+/* ------Footer------ */
+
+footer {
+    padding: 147px 0 167px;
+}
+
+.footer-wrap {
+    display: flex;
+    color: #5C7677;
+    line-height: 17.07px;
+    letter-spacing: 0.05em;
+}
+
+.low {
+    margin-right: 60px;
+}
