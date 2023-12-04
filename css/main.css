@@ -106,8 +106,9 @@ header {
 	margin: 143px 0 10px;
 }
 
-.arrow {
-	transition: all 0.5s ease;
+.arrow:hover img {
+	transform: scale(1.5, 2);
+	transition: transform 0.5s ease;
 }
 
 .btn--clik {
@@ -185,6 +186,56 @@ header {
 	letter-spacing: 0.05em;
 }
 
+.center__next {
+	display: block;
+	width: 80px;
+	height: 50px;
+}
+.center__next div {
+	position: relative;
+	top: 20px;
+	width: 60px;
+	height: 2px;
+	background-color: #4eb1b6;
+	left: 0;
+	display: block;
+}
+.center__next div::before {
+	content: '';
+	position: absolute;
+	width: 23px;
+	height: 2px;
+	top: 8px;
+	right: -5px;
+	background-color: #4eb1b6;
+	transform: rotate(-45deg);
+}
+.center__next div::after {
+	content: '';
+	position: absolute;
+	width: 23px;
+	height: 2px;
+	top: -8px;
+	right: -3.6px;
+	background-color: #4eb1b6;
+	transform: rotate(45deg);
+}
+
+.center__next:hover div {
+	animation: arrow-long;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes arrow-long {
+	0% {
+		width: 60px;
+	}
+	100% {
+		width: 100px;
+	}
+}
+
 .photo-people {
 	width: 476px;
 	height: 649px;
@@ -236,7 +287,6 @@ header {
 	background-color: #4eb1b6;
 	border-radius: 23px;
 	margin-bottom: 15px;
-	/* transform: rotate(90ed); */
 }
 
 .photo--cat {
@@ -266,6 +316,18 @@ footer {
 @media (max-width: 1320px) {
 	.container {
 		width: 1000px;
+	}
+
+	.opportunity {
+		margin-bottom: 60px;
+	}
+
+	footer {
+		padding: 0 0 100px;
+	}
+
+	.photo-people {
+		height: auto;
 	}
 }
 
@@ -309,6 +371,23 @@ footer {
 
 	.photo-people {
 		width: auto;
+		height: 643px;
+	}
+
+	.gid-wrap {
+		height: auto;
+	}
+
+	.list {
+		width: 326px;
+	}
+
+	.list__text {
+		margin-bottom: 20px;
+	}
+
+	footer {
+		padding: 100px 0 100px;
 	}
 }
 
@@ -318,7 +397,7 @@ footer {
 	}
 	/* ------media GID------ */
 	.opportunity {
-		margin-bottom: 30px;
+		margin: 0 35px 30px;
 	}
 
 	.gid-wrap {
@@ -338,7 +417,7 @@ footer {
 
 	/* ------media FOOTER------ */
 	footer {
-		padding: 75px 30px 90px;
+		padding: 0 30px 90px;
 	}
 
 	.footer-wrap {
@@ -356,6 +435,10 @@ footer {
 	}
 
 	/* ------media ROUTE------ */
+	.way {
+		margin: 0 30px;
+	}
+
 	.photo-people {
 		width: -webkit-fill-available;
 	}
@@ -363,5 +446,23 @@ footer {
 	/* ------media GID------ */
 	.gid-wrap {
 		background: url(../img/cat.jpg) no-repeat center top/100% 50%;
+	}
+
+	.list {
+		padding: 0;
+	}
+
+	footer {
+		padding: 80px 30px 90px;
+	}
+}
+
+@media (max-width: 400px) {
+	.photo-people {
+		height: auto;
+	}
+
+	.gid-wrap {
+		padding: 422px 30px 0;
 	}
 }
