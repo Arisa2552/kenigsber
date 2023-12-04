@@ -182,14 +182,14 @@ header {
 }
 
 .center__text--down {
-	margin-bottom: 55px;
+	margin-bottom: 20px;
 	letter-spacing: 0.05em;
 }
 
 .center__next {
 	display: block;
 	width: 80px;
-	height: 50px;
+	height: 70px;
 }
 .center__next div {
 	position: relative;
@@ -372,6 +372,10 @@ footer {
 	.photo-people {
 		width: auto;
 		height: 643px;
+	}
+
+	.center__next {
+		height: 30px;
 	}
 
 	.gid-wrap {
